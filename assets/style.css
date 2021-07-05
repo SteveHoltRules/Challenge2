@@ -114,7 +114,7 @@ header nav ul li {
   border-radius: 3px;
 }
 
-/* Portfolio */
+/* Portfolio Title*/
 .block-row {
   display: flex;
   justify-content: center;
@@ -126,35 +126,90 @@ header nav ul li {
 
 }
 
-/* Projects */
+.blocks {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* Projects: This is the flex container*/
 .projects {
   width: 45%;
+  margin: .75%;
   color: var(--accent1);
   margin-bottom: 10px;
 }
 
+/* These are the flex items */
 .project1 {
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   object-fit: cover;
   background-position: center;
   background-image: url(../assets/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);
   color: var(--base);
   border: 2px solid var(--accent1);
   border-radius: 10px;
+  padding: 1.5%;
 }
 
 .project2 {
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   object-fit: cover;
   background-position: center;
-  background-image: url(british-library-Y1S0ApwC054-unsplash.jpg);
+  background-image: url(../assets/british-library-Y1S0ApwC054-unsplash.jpg);
   color: var(--accent3);
   border: 2px solid var(--accent1);
   border-radius: 10px;
+  padding: 1.5%;
+}
+
+.project3 {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  object-fit: cover;
+  background-position: center;
+  background-image: url(../assets/nathan-dumlao-nBJHO6wmRWw-unsplash.jpg);
+  color: var(--accent3);
+  border: 2px solid var(--accent1);
+  border-radius: 10px;
+  padding: 1.5%;
+}
+
+.project4 {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  object-fit: cover;
+  background-position: center;
+  background-image: url(../assets/vincent-tom-8YRJQ0srDRo-unsplash.jpg);
+  color: var(--accent3);
+  border: 2px solid var(--accent1);
+  border-radius: 10px;
+  padding: 1.5%;
+}
+
+.aboutme {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  object-fit: cover;
+  background-position: center;
+  background-image: url(../assets/tania-melnyczuk-LhuupC_9EqE-unsplash.jpg);
+  color: var(--accent3);
+  border: 2px solid var(--accent1);
+  border-radius: 10px;
+  padding: 1.5%;
 }
