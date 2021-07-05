@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+:root {
+  --base: rgb(247, 247, 255);
+  --accent1: rgb(34, 56, 67);
+  --accent2: rgb(236, 164, 0);
+  --accent3: rgb(150, 2, 0);
+  --accent4: rgb(233, 79, 55);
+  --accent5: rgb(107, 15, 26);
+}
+
+/* Generic Body */
+
+body {
+  color: var(--accent1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Section */
+header {
+  padding: 1%;
+  background-color: var(--accent2);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+header h1 {
+  color: var(--accent1);
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 .luna {
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border: 2px solid var(--accent1);
+}
+
+/* header h1 .luna {
+  content: url(/assets/image2vector.jpg);
+  width: 90px;
+  height: 90px;
+  border: 2px solid var(--accent1);
+} */
+
+header nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 7px 12px;
+  font-weight: bold;
+  font-size: 1.40vw;
+}
+
+/* Hero Section */
+.contact {
+  background-color: var(--base);
+  background-image: url("barn-images-t5YUoHW6zRo-unsplashflipped.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.contact-cta {
+  width: 40%;
+  text-align: right;
+  margin: 5%;
+  color: var(--accent1);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.contact-form {
+  border: 1px double var(--accent1);
+  background-color: var(--accent1);
+  padding: 20px;
+  color: var(--base);
+  width: 40%;
+  margin: 2.5%;
+  border-radius: 3px;
+}
+
+/* Portfolio */
+.block-row {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 5px;
+  border-bottom: 1px solid var(--accent5);
+  margin: 5px auto 35px auto;
+  color: var(--accent1);
+
+}
+
+/* Projects */
+.projects {
+  width: 45%;
+  color: var(--accent1);
+  margin-bottom: 10px;
+}
+
+.project1 {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: cover;
+  background-position: center;
+  background-image: url(../assets/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);
+  color: var(--base);
+  border: 2px solid var(--accent1);
+  border-radius: 10px;
+}
+
+.project2 {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: cover;
+  background-position: center;
+  background-image: url(british-library-Y1S0ApwC054-unsplash.jpg);
+  color: var(--accent3);
+  border: 2px solid var(--accent1);
+  border-radius: 10px;
+}
