@@ -177,10 +177,13 @@ header nav ul li {
 
 /* Projects: This is the flex container*/
 .projects {
-  width: 45%;
+  width: 35%;
   margin: .75%;
   color: var(--accent1);
   margin-bottom: 10px;
+  border: none;
+  opacity: .65;
+  padding: 10px;
 }
 
 /* These are the flex items */
@@ -275,12 +278,17 @@ header nav ul li {
 }
 
 .projects:hover {
-  opacity: .65;
+  opacity: 1;
+  transition: height;
 }
 
-.projects span:after {
-  content: '\00bb';
-  position: absolute;
-  top: 0;
-  transition: .025s;
+.projects:focus { 
+  height: 90px;
+  display: flex;
+  align-items: flex-start;
+  order: -1;
+  flex-basis: 80%;
+  padding: 10px;
+  margin: 10px; 
+  opacity: 1;
 }
