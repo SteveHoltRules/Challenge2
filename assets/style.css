@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 :root {
@@ -126,8 +125,6 @@ header nav ul li {
   border-radius: 3px;
 }
 
-
-
 .contact-form p {
   display: flex;
   justify-content: start;
@@ -163,29 +160,29 @@ header nav ul li {
   border-bottom: 1px solid var(--accent5);
   margin: 5px auto 35px auto;
   color: var(--accent1);
-
 }
 
-.blocks {
+/* Portfolio Flex Container*/
+.column {
   display: flex;
   width: 100%;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: center;
 }
 
-
-/* Projects: This is the flex container*/
+/* Main Styling for the flex items */
 .projects {
   width: 35%;
   color: var(--accent1);
   border: none;
-  opacity: .65;
+  background-color: inherit;
+  opacity: .85;
+  margin: 10px;
+  padding: 10px;
 }
 
-/* These are the flex items */
+/* Flex item styling  */
 .project1 {
-  margin-top: auto;
   object-fit: cover;
   background-size: 140% auto;
   background-position: left;
@@ -195,59 +192,39 @@ header nav ul li {
 }
 
 .project2 {
-  margin-top: auto;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   background-size: 140% auto;
   background-position: left;
   background-image: url(../assets/british-library-Y1S0ApwC054-unsplash.jpg);
-  color: var(--accent3);
   border: 2px solid var(--accent1);
   border-radius: 10px;
-  padding: 1.5%;
 }
 
 .project3 {
-  margin-top: auto;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   background-size: 140% auto;
   background-position: left;
   background-image: url(../assets/nathan-dumlao-nBJHO6wmRWw-unsplash.jpg);
-  color: var(--accent3);
   border: 2px solid var(--accent1);
   border-radius: 10px;
-  padding: 1.5%;
 }
 
 .project4 {
-  margin-top: auto;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   background-size: 140% auto;
   background-position: center;
   background-image: url(../assets/gustavo-campos-B87zMorEZRo-unsplash.jpg);
-  color: var(--base);
   border: 2px solid var(--accent1);
   border-radius: 10px;
-  padding: 1.5%;
 }
 
 .aboutme {
-  margin-top: auto;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   background-size: 140% auto;
   background-position: left;
   background-image: url(../assets/vincent-tom-8YRJQ0srDRo-unsplash.jpg);
-  color: var(--accent3);
   border: 2px solid var(--accent1);
   border-radius: 10px;
-  padding: 1.5%;
 }
 
 .block-work {
@@ -261,11 +238,11 @@ header nav ul li {
 }
 
 .projects:focus { 
-  height: 90px;
+  height: 200px;
   display: flex;
   align-items: flex-start;
   order: -1;
-  flex-basis: 80%;
+  flex-basis: 40%;
   padding: 10px;
   margin: 10px; 
   opacity: 1;
