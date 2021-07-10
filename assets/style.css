@@ -1,6 +1,7 @@
-*{
+*,*::before, *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -82,74 +83,40 @@ header nav ul li {
   border: 1px var(--accent1);
   box-shadow: 1px 1px var(--accent1);
   padding: 3%;
-}
-
-.contact-spacing {
   display: flex;
   justify-content: flex-end;
-  width: 77%;
-  flex-wrap: wrap;
+  height: 25%;
 }
+
 .contact-header {
   border: 1px double var(--accent1);
   background-color: var(--accent1);
   padding: 20px;
   color: var(--base);
-  width: 30%;
-  display:flex;
-  flex-direction: column;
   border-radius: 3px;
+  text-align: center;
+  width: 45%;
 }
 
-.contact-header h3 {
-  font-size: 4vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 2%;
-}
-
-.contact-header h4 {
+.contact-column {
   display: flex;
   justify-content: center;
-  margin-bottom: 4%;
+  flex-wrap: wrap;
 }
 
-.contact-form {
-  border: 1px double var(--accent1);
-  background-color: var(--accent1);
-  color: var(--base);
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-radius: 3px;
-}
-
-.contact-form p {
-  display: flex;
-  justify-content: start;
-  flex-basis: 100%;
-  margin-top: 5%;
-  margin-right: 4%;
-  text-align: inherit;
-}
-
-.contact-form form {
-  display: flex;
+.contact-form{
   width: 30%;
-  flex-direction: column;
-  justify-items: flex-end;
   flex-basis: 100%;
 }
 
-.contact label {
+/* .contact-form label {
   flex-basis: 100%;
 }
 
-.contact button {
+.contact-form button {
   margin-top: 2%;
   padding: .5%;
-}
+} */
 
 /* Portfolio Title*/
 .block-row {
@@ -167,7 +134,7 @@ header nav ul li {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;  
 }
 
 /* Main Styling for the flex items */
@@ -176,7 +143,6 @@ header nav ul li {
   color: var(--accent1);
   border: none;
   background-color: inherit;
-  opacity: .85;
   margin: 10px;
   padding: 10px;
 }
@@ -230,6 +196,7 @@ header nav ul li {
 .block-work {
   text-align: center;
   width: 100%;
+  color: var(--accent1);
 }
 
 .projects:hover {
@@ -237,7 +204,7 @@ header nav ul li {
   transition: height;
 }
 
-.projects:focus { 
+.projects:focus-within { 
   height: 200px;
   display: flex;
   align-items: flex-start;
@@ -246,4 +213,8 @@ header nav ul li {
   padding: 10px;
   margin: 10px; 
   opacity: 1;
+}
+
+@media screen {
+  
 }
