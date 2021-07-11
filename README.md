@@ -15,6 +15,7 @@ I would like to have the logo encrouch onto the hero section so the two are more
  * CSS
   
 ## Website
-
+https://steveholtrules.github.io/Portfolio/
   
 ## Screenshot
+![image](https://user-images.githubusercontent.com/78341753/125182911-b4a71880-e1d7-11eb-81f6-02655107ce88.png)
