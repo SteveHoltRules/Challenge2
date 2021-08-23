@@ -19,6 +19,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.greet {
+  background-color: rgba(247, 247, 255, .65);
+  
+}
+
+.accent1 {
+  background-color: var(--accent1);
+}
+
+.base {
+  background-color: var(--base);
+}
+
 /* Header Section */
 header {
   height: 12vh;
@@ -89,7 +102,7 @@ header nav ul li {
 }
 
 /* Contact form */
-.contact-container {
+/* .contact-container {
   border: 1px double var(--accent1);
   background-color: var(--accent1);
   padding: 20px;
@@ -98,18 +111,18 @@ header nav ul li {
   width: 45%;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* Container for header in contact form */
-.contact-header {
+/* .contact-header {
   text-align: center;
   display: flex;
   justify-content: center;
   flex-basis: 100%;
-}
+} */
 
 /* Container for column in contact form */
-.contact-column {
+/* .contact-column {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -130,7 +143,7 @@ header nav ul li {
 .contact-form button {
   margin-top: 2%;
   padding: .5%;
-}
+} */
 
 /* Portfolio Title*/
 .block-row {
@@ -218,7 +231,7 @@ header nav ul li {
   transition: height;
 }
 
-.projects:focus-within { 
+/* .projects:focus-within { 
   height: 200px;
   display: flex;
   align-items: flex-start;
@@ -227,7 +240,7 @@ header nav ul li {
   padding: 10px;
   margin: 10px; 
   opacity: 1;
-}
+} */
 
 #aboutme:focus-within { 
   height: 400px;
